@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-yellow-100 mb-96">
+    <div>
+    <div class="flex flex-row gap-40 ml-[37rem] mt-5">
+        <div class="border-[3px] border-red-400 px-16 py-10 bg-emerald-300 rounded">
+            <h1 class="text-4xl font-bold text-emerald-900">My Daily Cost</h1>
+        </div>
+    </div>
+
+
+     <div class="flex flex-row gap-40 ml-40 mt-14">
+        <div class="border-[3px]  border-red-400 px-16 py-10 bg-red-300 rounded">
+            <h1 class="text-4xl font-bold text-emerald-900">Today Cost</h1>
+            <p class="text-2xl font-medium text-gray-900 ml-14 mt-5">$<span id="todayCost">00</span></p>
+        </div>
+        <div class="border-[3px]  border-red-400 px-16 py-10 bg-red-300 rounded">
+            <h1 class="text-4xl font-bold text-emerald-900">Total Cost</h1>
+            <p class="text-2xl font-medium text-gray-900 ml-14 mt-5">$<span id="TotalCost">00</span></p>
+        </div>
+        <div class="border-[3px]  border-red-400 px-16 py-10 bg-lime-200 rounded">
+            <h1 class="text-4xl font-bold text-green-900">Total Balance</h1>
+            <p class="text-2xl font-medium text-gray-900 ml-14 mt-5">$<span id="total-balance">00</span></p>
+        </div>
+
+      </div>
+
+
+      
+      <div class="flex flex-row gap-80 ml-40 mt-14">
+        <div>
+            <input id="input-cost" type="number" class=" pl-3 pr-8 py-2 border border-gray-300  focus:outline-red-300 rounded" placeholder="Enter Your Cost">
+            <button id="addCost" class="rounded text-xl text-white font-medium border bg-red-400 py-1.5 px-3">Add Cost</button>
+        </div>
+
+        <div class="ml-40">
+            <input id="input-balance" type="number" class="ml-20 pl-3 pr-8 py-2 border border-gray-300  focus:outline-red-300 rounded" placeholder="Enter Your money">
+            <button id="addMoney" class=" rounded text-xl text-white font-medium border bg-red-400 py-1.5 px-3">Add Money</button>
+        </div>
+
+
+ <script src="./app.js"></script>
+</body>
+</html>
